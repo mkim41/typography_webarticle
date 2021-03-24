@@ -1,0 +1,195 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/** END OF RESET **/
+
+
+
+
+
+
+
+
+
+body{
+    max-width: 620px;
+    min-width: 325px;
+    padding: 0 25px 0 25px;
+    margin: auto;
+    margin-top: 50px;
+    hyphens: auto;
+
+    -webkit-hyphens: auto;
+    -webkit-hyphenate-limit-lines: 2;
+    -webkit-hyphenate-limit-before: 3;
+    -webkit-hyphenate-limit-after: 3;
+    
+    -ms-hyphens: auto;
+    -ms-hyphenate-limit-lines: 2;
+    -ms-hyphenate-limit-chars: 7 3 3;
+
+    /**text-aligh: justify;*/
+}
+
+h1 {
+    font-size: 48px;
+    font-family: 'anton', serif;
+    font-weight: 400;
+    font-style: normal;
+    text-transform: uppercase;
+    line-height: 60px;
+    margin-bottom: 20px; 
+}
+
+h2 {
+    font-size: 24px;
+    font-family: roboto, serif;
+    font-weight: 400;
+    line-height: 32px;
+    margin-bottom: 45px;
+    padding: 0 100px 0 0; 
+}
+
+.byline {
+    font-size: 15px;
+    font-family: roboto,sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    margin-bottom: 25px;
+}
+
+p {
+    font-size: 18px;
+    font-family: roboto,sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    line-height: 25px;
+    letter-spacing: .2px;
+    margin-bottom: 25px;
+    padding: 0 30px 0 50px;
+
+    /** style p+p {text-indent: 1em;} for adding indents starting from the second paragraph**/
+}
+
+.pullquote {
+    font-size: 28px;
+    line-height: 34px;
+    font-weight: 400;
+    letter-spacing: 0px;
+    padding: 20px 0 20px 0;
+}
+
+a {
+    color: darkred;
+}
+
+a:hover {
+    color: red;
+}
+
+/** span .giveclassname {} **/
+
+
+
+
+
+
+
+/** RESPONSIVE **/
+
+
+@media only screen and (max-width: 450px) {
+    h1{
+        font-size:55px;
+        line-height: 60px;
+    }
+    
+    h2{
+        font-size: 26px;
+        line-height: 34px;
+        padding: 0;
+        font-weight: 400;
+        letter-spacing: 0; 
+    }
+
+    .byline {
+        padding: 0;
+        font-weight: 900;
+        letter-spacing: 0; 
+    }
+
+    .pullquote {
+        font-size: 28px;
+        line-height: 36px;
+        padding: 10px 25px 30px 25px;
+    }
+
+    p {
+     font-size: 20px;
+     line-height: 29px;
+     margin-bottom: 30px;
+     padding: 0;
+    }
+   
+}
+
+
+@media only screen and (max-width: 375px) {
+    h1{
+        font-size:50px;
+        line-height: 55px;
+        padding: 0;
+    }
+
+    h2{
+        font-size: 24px;
+        line-height: 32px;
+    }
+}
+
+
